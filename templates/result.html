@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flood Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        p {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            animation: fadeIn 1s ease-in-out;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Flood Prediction Result</h1>
+    <p>The predicted flood probability for {{ city }} is: {{ prediction }}</p>
+    <a href="/">Go back</a>
+</body>
+</html>

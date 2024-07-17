@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flood Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        form {
+            display: inline-block;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], select {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Flood Prediction Form</h1>
+    <form action="/predict" method="post">
+        <label for="city">City:</label>
+        <select name="city" id="city">
+            <option value="Delhi">Delhi</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Kolkata">Kolkata</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Ahmedabad">Ahmedabad</option>
+      <option value="Pune">Pune</option>
+      <option value="Surat">Surat</  >
+      <option value="Jaipur">Jaipur</option>
+      <option value="Lucknow">Lucknow</option>
+      <option value="Kanpur">Kanpur</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="Indore">Indore</option>
+      <option value="Thane">Thane</option>
+      <option value="Visakhapatnam">Visakhapatnam</option>
+      <option value="Bhopal">Bhopal</option>
+      <option value="Vadodara">Vadodara</option>
+      <option value="Ghaziabad">Ghaziabad</option>
+      <option value="Nashik">Nashik</option>
+      <option value="Faridabad">Faridabad</option>
+      <option value="Agra">Agra</option>
+      <option value="Meerut">Meerut</option>  
+      <option value="Patna">Patna</option>
+      <option value="Guwahati">Guwahati</option>
+      <option value="Chandigarh">Chandigarh</option>
+      <option value="Jaipur">Jaipur (duplicate removed)</option>
+      <option value="Coimbatore">Coimbatore</option>
+      <option value="Ludhiana">Ludhiana</option>
+      <option value="Aurangabad">Aurangabad</option>
+      <option value="Solapur">Solapur</option>
+      <option value="Rajkot">Rajkot</option>
+            <!-- Add more cities as needed -->
+        </select>
+        <label>Monsoon Intensity:</label>
+        <input type="text" name="MonsoonIntensity">
+        <label>Topography Drainage:</label>
+        <input type="text" name="TopographyDrainage">
+        <label>River Management:</label>
+        <input type="text" name="RiverManagement">
+        <label>Deforestation:</label>
+        <input type="text" name="Deforestation">
+        <label>Urbanization:</label>
+        <input type="text" name="Urbanization">
+        <label>Climate Change:</label>
+        <input type="text" name="ClimateChange">
+        <label>Dams Quality:</label>
+        <input type="text" name="DamsQuality">
+        <label>Siltation:</label>
+        <input type="text" name="Siltation">
+        <label>Agricultural Practices:</label>
+        <input type="text" name="AgriculturalPractices">
+        <label>Encroachments:</label>
+        <input type="text" name="Encroachments">
+        <label>Ineffective Disaster Preparedness:</label>
+        <input type="text" name="IneffectiveDisasterPreparedness">
+        <label>Drainage Systems:</label>
+        <input type="text" name="DrainageSystems">
+        <label>Coastal Vulnerability:</label>
+        <input type="text" name="CoastalVulnerability">
+        <label>Landslides:</label>
+        <input type="text" name="Landslides">
+        <label>Watersheds:</label>
+        <input type="text" name="Watersheds">
+        <label>Deteriorating Infrastructure:</label>
+        <input type="text" name="DeterioratingInfrastructure">
+        <label>Population Score:</label>
+        <input type="text" name="PopulationScore">
+        <label>Wetland Loss:</label>
+        <input type="text" name="WetlandLoss">
+        <label>Inadequate Planning:</label>
+        <input type="text" name="InadequatePlanning">
+        <label>Political Factors:</label>
+        <input type="text" name="PoliticalFactors">
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
